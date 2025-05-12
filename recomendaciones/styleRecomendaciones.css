@@ -1,0 +1,220 @@
+* {
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding-top: 60px;
+    background-color: whitesmoke;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;
+    font-size: 25px;  
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 9999;
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+  
+  .logo {
+    flex: 1;
+  }
+  .imgLogo{
+    width: 150px;
+    height: 120px;
+    border-radius: 40%;
+  }
+  
+  .middle-text {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .middle-text a{
+    flex: 1;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .hamburger {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .hamburger-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    color: white;
+  }
+  
+    .hamburger-button:hover{
+    background-color: #218838;
+    transform: scale(1.05);
+    font-weight: bold;
+  } 
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    display: none;
+    flex-direction: column;
+    border-color: green;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+  .dropdown a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border: solid 1px green;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+  .dropdown a:hover {
+    background-color: #eee;
+  }
+  
+  @media (max-width: 768px) {
+    .middle-text {
+      display: none;
+    }
+  
+    .hamburger-button {
+      display: block;
+    }
+  }
+  footer {
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+  
+  .footer-content section {
+    flex: 1 1 200px;
+  }
+  
+  .footer-content p {
+    margin-bottom: 8px;
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .imgLogo {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-content section {
+      flex: none;
+      width: 100%;
+    }
+  
+    .imgLogo {
+      margin-top: 10px;
+    }
+  }
+  .social-container a{
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+    color: green;
+    
+}
+.copiright{
+    background-color: white;
+    text-align: center;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+}
+
+/* Main recomendaciones */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; /* Espacio para el header */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+}
+.tituloRecomendaciones{
+    text-align: center;
+    font-size: 30px;
+    color: green;
+    margin-top: 20px;
+}
+.textoRecomendaciones{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+.cuadroRecomendaciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.imgRecomendaciones{
+    width: 500px;
+    height: 450px;
+    border-radius: 10%;
+    margin-top: 20px;
+}

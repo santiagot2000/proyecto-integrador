@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styleLogin.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>CONTROLES AMBIENTALES A & B S.A.S</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./imagenes/Logo.jpeg" alt="" class="imgLogo">
+        </section>
+
+        <section class="middle-text">
+            <section><a href="../inicio pagina web/index.html">Inicio</a></section>
+            <section><a href="../recomendaciones/recomendaciones.html">Recomendaciones</a></section>
+            <section><a href="../contactos/contacto.html">¿Quieres que te contactemos?</a></section>
+            <section><a href="../catalogo/catalogo.html">Servicios</a></section>
+        </section>
+
+        <section class="hamburger">
+            <button class="hamburger-boton" onclick="toggleMenu()" style="margin: 0px">☰</button>
+            <section class="dropdown" id="menu">
+                <a href="../login y registro/login.html">Iniciar Sesión</a>
+                <a href="../catalogo/catalogo.html">Catalogo de servicios</a>
+                <a href="../cotizacion/cotizador.html">Cotización</a>
+                <a href="../agendamiento de citas/citas.html">Agendamiento de citas</a>
+            </section>
+        </section>
+    </header>
+    <main>
+        <div class="container" id="main">
+            <div class="sign-up">
+                <form action="registrar.php" method="post">
+                    <h1>Crear una cuenta</h1>
+                    <div class="social-container">
+                        <a href="https://www.facebook.com/people/Controles-Ambientales-AB/61566639934175/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/coamb21/" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/573023381755" target="_blank" class="social"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <p>utiliza tu correo electronico para registrarte</p>
+                    <input type="text" name="nombre" placeholder="Nombre" required="">
+                    <input type="email" name="email" placeholder="Correo electrónico" required="">
+                    <input type="password" name="pswd" placeholder="Contraseña" required="">
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+
+
+            <div class="sign-in">
+                <form action="login.php" method="post">
+                    <h1>Iniciar sesión</h1>
+                    <div class="social-container">
+                        <a href="https://www.facebook.com/people/Controles-Ambientales-AB/61566639934175/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/coamb21/" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/573023381755" target="_blank" class="social"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <p>usa tu cuenta</p>
+                    <input type="email" name="email" placeholder="Correo electrónico" required="">
+                    <input type="password" name="pswd" placeholder="Contraseña" required="">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    
+                    <button type="submit">Iniciar sesión</button>
+                    
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-left">
+                        <h1>Bienvenido de nuevo!</h1>
+                        <p>Para mantenerse conectado con nosotros,inicie sesion con su informacion personal</p>
+                        <button type="submit" id="signIn">Iniciar sesión</button>
+                    </div>
+                    <div class="overlay-right">
+                        <h1>Hola, amig@</h1>
+                        <p>Introduce tus datos personales y comienza tu viaje con nosotros</p>
+                        <button type="submit" id="signUp">Registrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <section class="footer-content">
+                <section class="letraFooter">
+                    <p>Cobertura</p>
+                    <p>Atención a toda el área metropolitana</p>
+                </section>
+                <section>
+                    <p>Correo: controles.ambientales@gmail.com</p>
+                    <p>Dirección: Calle 25 # 60 - 115 </p>
+                    <p>Celular: 302 338 17 55</p>
+                </section>
+                <section>
+                    <section class="social-container">
+                        <p>Redes Sociales</p>
+                        <a href="https://www.facebook.com/people/Controles-Ambientales-AB/61566639934175/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/coamb21/" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/573023381755" target="_blank" class="social"><i class="fab fa-whatsapp"></i></a>
+                    </section>
+                </section>
+                <section>
+                    <img src="./imagenes/Logo.jpeg" alt="Logo" class="imgLogo">
+                </section>
+                </section>
+        </section>
+        <section class="copiright">
+            <p>© Todos los derechos reservados - 2025</p>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
