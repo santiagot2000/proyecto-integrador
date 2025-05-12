@@ -1,0 +1,60 @@
+/* Ajustes para el contenedor de login en pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+    min-height: auto;
+    height: auto;
+  }
+
+  .sign-in,
+  .sign-up,
+  .overlay-container,
+  .overlay-left,
+  .overlay-right {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+
+/* Ajustes para móviles más pequeños */
+@media (max-width: 480px) {
+  header {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .imgLogo {
+    width: 100px;
+    height: auto;
+  }
+
+  .hamburger-boton {
+    font-size: 20px;
+  }
+
+  .footer-content p {
+    font-size: 12px;
+  }
+}
+     
