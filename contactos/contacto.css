@@ -1,0 +1,235 @@
+* {
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding-top: 60px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabla{
+    background-color: rgb(229, 238, 228);
+    width: 80%;
+    margin: 0 auto; /* Centra horizontalmente */
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px green;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+table, th, td {
+    padding: 20px; /* Aumenta el tamaño de las celdas */
+    border: 1px solid green; /* Cambia el color del borde */
+}
+
+th, td {
+    font-size: 20px; /* Aumenta el tamaño del texto */
+}
+
+textarea{
+    resize: vertical; /* bloquea el desplazamiento solo a horizontal*/
+    max-height: 200px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+.tabla input, textarea{
+    margin-bottom: 20px;
+    width: 100%; /* espacio que ocupa al ancho de la pag*/
+    padding: 10px;  /* espacio al ancho de los input*/
+    -webkit-box-sizing: border-box;  /*con estas 3 lineas se alinea las lineas de los input dentro de la tabla*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid green;    
+    border-radius: 10px;
+}
+input[type="submit"]{
+    margin-bottom: 0px;
+    background: green;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: oblique;
+  }
+input[type="submit"]:hover{    
+    background: rgb(95, 194, 95);   /*permite que cuando pasemos el cursor por el boton cambie de tono*/
+    cursor: pointer; /*permite cambiar el icono del cursor*/
+    text-transform: uppercase; /*cambia el texto a mayusculas*/
+    font-weight: bold; /*cambia el texto a negrita*/
+    transition: all 0.3s ease; /*permite que el cambio de color sea suave*/
+}
+
+h5{
+    color: green;
+    text-align: center;
+}
+
+
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;
+    font-size: 25px;  
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 9999;
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+  
+  .logo {
+    flex: 1;
+  }
+  .imgLogo{
+    width: 150px;
+    height: 120px;
+    border-radius: 40%;
+  }
+  
+  .middle-text {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .middle-text a{
+    flex: 1;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .hamburger {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .hamburger-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    color: white;
+  }
+  .hamburger-button:hover{
+    background-color: #218838;
+    transform: scale(1.05);
+    font-weight: bold;
+  } 
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    display: none;
+    flex-direction: column;
+    border-color: green;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+  .dropdown a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border: solid 1px green;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+  .dropdown a:hover {
+    background-color: #eee;
+  }
+  
+  @media (max-width: 768px) {
+    .middle-text {
+      display: none;
+    }
+  
+    .hamburger-button {
+      display: block;
+    }
+  }
+  footer {
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+  
+  .footer-content section {
+    flex: 1 1 200px;
+  }
+  
+  .footer-content p {
+    margin-bottom: 8px;
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .imgLogo {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-content section {
+      flex: none;
+      width: 100%;
+    }
+  
+    .imgLogo {
+      margin-top: 10px;
+    }
+  }
+  .social-container a{
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+    color: green;
+}
+.copiright{
+    background-color: white;
+    text-align: center;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+}
