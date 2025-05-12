@@ -1,0 +1,81 @@
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  
+  /* HEADER */
+  header {
+    height: 50px;
+    padding: 0 10px;
+  }
+
+  .imgLogo {
+    width: 120px; /* Ajuste para pantallas pequeñas */
+    height: auto;
+  }
+
+  .middle-text {
+    display: none; /* Ocultar texto en móviles */
+  }
+
+  .hamburger-button {
+    display: block; /* Mostrar botón de hamburguesa */
+  }
+
+  /* DROPDOWN */
+  .dropdown {
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Ajuste para no tapar el header */
+    right: 0;
+    left: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-content section {
+    width: 100%;
+    margin-bottom: 20px; /* Asegura que las secciones estén separadas */
+  }
+
+  .imgLogo {
+    margin-top: 10px;
+    max-width: 100px; /* Ajuste de tamaño */
+  }
+
+  /* SOCIAL CONTAINER */
+  .social-container a {
+    height: 35px;
+    width: 35px;
+    font-size: 18px; /* Ajuste de iconos en móviles */
+  }
+
+  /* MAIN */
+  main {
+    margin-top: 90px; /* Para que no se cubra por el header */
+    padding: 15px;
+    width: 100%;
+  }
+
+  .tituloRecomendaciones {
+    font-size: 25px;
+  }
+
+  .textoRecomendaciones {
+    font-size: 18px;
+  }
+
+  .cuadroRecomendaciones {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .imgRecomendaciones {
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+  }
+}
