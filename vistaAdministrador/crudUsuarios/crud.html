@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrador - Gestión de Usuarios</title>
+    <link rel="stylesheet" href="./styleCrud.css" />
+    <link rel="stylesheet" href="../../login y registro/styleLogin.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <span>Bienvenido, <span id="nombreUsuario"></span></span>
+            <button id="btnCerrarSesion" class="btn">Cerrar sesión</button>
+            </nav>
+        </header>
+
+    <main class="contenedor">
+        <h1>Gestión de Usuarios</h1>
+
+        <section id="formularioCRUD">
+        <form id="formCrearUsuario" class="formulario">
+            <input type="text" id="usuarioNuevo" placeholder="Nombre de usuario" required />
+            <input type="text" id="idNuevo" placeholder="ID" required />
+            <input type="email" id="correoNuevo" placeholder="Correo electrónico" required />
+            <input type="password" id="passwordNuevo" placeholder="Contraseña (4 dígitos)" required />
+            <select id="tipoCuentaNuevo" required>
+            <option value="" disabled selected>Tipo de cuenta</option>
+            <option value="cliente">Cliente</option>
+            <option value="administrador">Administrador</option>
+            </select>
+            <button type="submit" class="btn">Crear Usuario</button>
+        </form>
+        </section>
+
+        <section id="listaUsuarios">
+        <h2>Usuarios Registrados</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>ID</th>
+                <th>Correo</th>
+                <th>Tipo</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody id="tablaUsuarios">
+            <!-- Usuarios se insertarán aquí dinámicamente -->
+            </tbody>
+        </table>
+        </section>
+
+        <p id="mensajeSistema" class="mensaje oculto"></p>
+    </main>
+
+    <script type="module" src="./crudAdmin.js"></script>
+</body>
+</html>

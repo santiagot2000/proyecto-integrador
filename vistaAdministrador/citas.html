@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../agendamiento de citas/styleCitas.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <title>CONTROLES AMBIENTALES A & B S.A.S</title>
+</head>
+<body>
+  <header>
+    <section class="logo">
+            <img src="../agendamiento de citas/imagenes/Logo.jpeg" alt="" class="imgLogo">
+        </section>
+
+        <section class="middle-text" style="font-size: 20px;">
+            <section><a href="../vistaAdministrador/index.html">Inicio</a></section>
+            <section><a href="../vistaAdministrador/recomendaciones.html">Recomendaciones</a></section>
+            <section><a href="../vistaAdministrador/contacto.html">¿Quieres que te contactemos?</a></section>
+            <section><a href="../vistaAdministrador/catalogo.html">Servicios</a></section>
+        </section>
+
+        <section class="hamburger">
+            <button class="hamburger-button" onclick="toggleMenu()">☰</button>
+            <section class="dropdown" id="menu">
+                <section>
+                    <span id="nombreUsuario">usuario</span>
+                    <button class="cerrarSesion" id="btnCerrarSesion">Cerrar Sesión</button>
+                </section>
+                <a href="../vistaAdministrador/catalogo.html">Catalogo de servicios</a>
+                <a href="../vistaAdministrador/cotizador/cotizador.html">Cotización</a>
+                <a href="../vistaAdministrador/citas.html">Agendamiento de citas</a>
+            </section>
+        </section>
+  </header>
+  
+  <main>
+    <section>
+      <h1>Agendar Cita</h1>
+    </section>
+    <section>
+      <form id="form-cita">
+      <label>
+        <p>Nombre:</p>
+        <input type="text" id="nombre" required>
+      </label>
+      <label>
+        <p>Email:</p>
+        <input type="email" id="email" required>
+      </label>
+      <label>
+        <p>Teléfono:</p>
+        <input type="telefono" id="telefono" required>
+      </label>
+      <label>
+        <p>Tipo de servicio:</p>
+        <select id="servicio" required>
+          <option value="">Selecciona un servicio</option>
+          <option value="Arañas">Arañas</option>
+          <option value="Chinches">Chinches</option>
+          <option value="Cucarachas">Cucarachas</option>
+          <option value="Garrapatas">Garrapatas</option>
+          <option value="Hormigas">Hormigas</option>
+          <option value="Moscas">Moscas</option>
+          <option value="Mosquitos">Mosquitos</option>
+          <option value="Pulgas">Pulgas</option>
+          <option value="Ratones">Ratones</option>
+        </select>
+      </label>
+      <label>
+        <p>Fecha:</p>
+        <input type="date" id="fecha" required>
+      </label>
+      <label>
+          <p>Hora:</p>
+          <select id="hora" required></select>
+      </label>
+      <button type="submit" class="boton">Agendar</button>
+    </form>
+    </section>
+    <section class="verCitas">
+      <a href="../agendamiento de citas/ver-citas.html">Ver Citas Agendadas</a>
+    </section>
+  </main>
+  
+  <footer>
+    <section>
+        <section class="footer-content">
+            <section class="letraFooter">
+              <p>Cobertura</p>
+              <p>Atención a toda el área metropolitana</p>
+            </section>
+            <section>
+              <p>Correo: controles.ambientales@gmail.com</p>
+              <p>Dirección: Calle 25 # 60 - 115 </p>
+              <p>Celular: 302 338 17 55</p>
+            </section>
+            <section>
+              <section class="social-container">
+                  <p>Redes Sociales</p>
+                  <a href="https://www.facebook.com/people/Controles-Ambientales-AB/61566639934175/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/coamb21/" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                  <a href="https://wa.me/573023381755" target="_blank" class="social"><i class="fab fa-whatsapp"></i></a>
+                </section>
+            </section>
+            <section>
+              <img src="../agendamiento de citas/imagenes/Logo.jpeg" alt="Logo" class="imgLogo">
+            </section>
+          </section>
+    </section>
+    <section class="copiright">
+        <p>© Todos los derechos reservados - 2025</p>
+    </section>
+  </footer>
+
+  <script src="../agendamiento de citas/citas.js"></script>
+  <script type="module" src="../login y registro/main.js"></script>
+
+</body>
+</html>
