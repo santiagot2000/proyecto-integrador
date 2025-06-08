@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       grupo.forEach(cita => {
         const li = document.createElement("li");
         li.innerHTML = `
-          ${cita.nombre} - ${cita.email} - ${cita.telefono} - ${cita.hora}
+          ${cita.nombre} - ${cita.email} - ${cita.telefono} - ${cita.servicio} - ${cita.hora}
           <button class="boton editar" data-index="${cita.index}">Editar</button>
           <button class="boton eliminar" data-index="${cita.index}">Eliminar</button>
         `;
@@ -52,6 +52,21 @@ document.addEventListener("DOMContentLoaded", () => {
           <label>Nombre:<input type="text" id="editar-nombre" required></label>
           <label>Email:<input type="email" id="editar-email" required></label>
           <label>Teléfono:<input type="text" id="editar-telefono" required></label>
+          <label>
+            <p>Tipo de servicio:</p>
+            <select id="editar-servicio" required>
+              <option value="">Selecciona un servicio</option>
+              <option value="Arañas">Arañas</option>
+              <option value="Chinches">Chinches</option>
+              <option value="Cucarachas">Cucarachas</option>
+              <option value="Garrapatas">Garrapatas</option>
+              <option value="Hormigas">Hormigas</option>
+              <option value="Moscas">Moscas</option>
+              <option value="Mosquitos">Mosquitos</option>
+              <option value="Pulgas">Pulgas</option>
+              <option value="Ratones">Ratones</option>
+            </select>
+          </label>
           <label>Fecha:<input type="date" id="editar-fecha" required></label>
           <label>Hora:<select id="editar-hora"></select></label>
           <button type="submit" class="boton">Guardar</button>
@@ -66,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nombreInput = document.getElementById("editar-nombre");
   const emailInput = document.getElementById("editar-email");
   const telefonoInput = document.getElementById("editar-telefono");
+  const servicioInput = document.getElementById("editar-servicio");
   const fechaInput = document.getElementById("editar-fecha");
   const horaSelect = document.getElementById("editar-hora");
   const cerrarModal = document.getElementById("cerrar-modal");
@@ -79,6 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
       nombreInput.value = cita.nombre;
       emailInput.value = cita.email;
       telefonoInput.value = cita.telefono;
+      servicioInput.value = cita.servicio;
       fechaInput.value = cita.fecha;
       mostrarHorariosDisponibles(cita.fecha, cita.hora);
       modal.style.display = "flex";
@@ -110,10 +127,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const nombre = nombreInput.value.trim();
     const email = emailInput.value.trim();
     const telefono = telefonoInput.value.trim();
+    const servicio = servicioInput.value;
     const fecha = fechaInput.value;
     const hora = horaSelect.value;
 
-    if (!nombre || !email || !telefono || !fecha || !hora) {
+    if (!nombre || !email || !telefono || !servicio || !fecha || !hora) {
       alert("Todos los campos son obligatorios.");
       return;
     }
@@ -127,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    citas[citaActualIndex] = { nombre, email, telefono, fecha, hora };
+    citas[citaActualIndex] = { nombre, email, telefono, servicio, fecha, hora };
     localStorage.setItem("citas", JSON.stringify(citas));
     modal.style.display = "none";
     location.reload();
