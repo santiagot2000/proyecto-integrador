@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./cotizador.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <title>CONTROLES AMBIENTALES A & B S.A.S</title>
+</head>
+<body>
+  <header>
+    <section class="logo">
+            <img src="../cotizador/imagenes/Logo.jpeg" alt="" class="imgLogo">
+        </section>
+
+        <section class="middle-text" style="font-size: 20px;">
+            <section><a href="../index.html">Inicio</a></section>
+            <section><a href="../recomendaciones.html">Recomendaciones</a></section>
+            <section><a href="../contacto.html">¿Quieres que te contactemos?</a></section>
+            <section><a href="../catalogo.html">Servicios</a></section>
+        </section>
+
+        <section class="hamburger">
+            <button class="hamburger-button" onclick="toggleMenu()">☰</button>
+            <section class="dropdown" id="menu">
+                <section>
+                    <span id="nombreUsuario">usuario</span>
+                    <button class="cerrarSesion" id="btnCerrarSesion">Cerrar Sesión</button>
+                </section>
+                <a href="../catalogo.html">Catalogo de servicios</a>
+                <a href="../cotizador/cotizador.html">Cotización</a>
+                <a href="../citas.html">Agendamiento de citas</a>
+            </section>
+        </section>
+  </header>
+  <main>
+      <section>
+        <h1>Cotizaciones</h1>
+        <h1>Selecciona un Servicio</h1>
+      </section>
+
+      <section class="galeria" id="galeria"></section>
+
+      <section class="formulario">
+        <label for="metros" class="metros">Metros Cuadrados:</label>
+        <input type="number" id="metros" min="1" required>
+        <button id="cotizar">Cotizar</button>
+        <p id="resultado"></p>
+      </section>
+  </main>
+  <footer>
+    <section>
+        <section class="footer-content">
+            <section class="letraFooter">
+              <p>Cobertura</p>
+              <p>Atención a toda el área metropolitana</p>
+            </section>
+            <section>
+              <p>Correo: controles.ambientales@gmail.com</p>
+              <p>Dirección: Calle 25 # 60 - 115 </p>
+              <p>Celular: 302 338 17 55</p>
+            </section>
+            <section>
+              <section class="social-container">
+                  <p>Redes Sociales</p>
+                  <a href="https://www.facebook.com/people/Controles-Ambientales-AB/61566639934175/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/coamb21/" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                  <a href="https://wa.me/573023381755" target="_blank" class="social"><i class="fab fa-whatsapp"></i></a>
+                </section>
+            </section>
+            <section>
+              <img src="./imagenes/Logo.jpeg" alt="Logo" class="imgLogo">
+            </section>
+          </section>
+    </section>
+    <section class="copiright">
+        <p>© Todos los derechos reservados - 2025</p>
+    </section>
+  </footer>
+  <script src="cotizador.js"></script>
+  <script type="module" src="../../login y registro/main.js"></script>
+</body>
+</html>
