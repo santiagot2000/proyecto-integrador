@@ -68,10 +68,14 @@ servicios.forEach(servicio => {
     }
   
     const total = seleccion.valor * metros;
-    resultado.textContent = `Total: $${total.toFixed(2)} COP`;
+    resultado.textContent = `Total: ${pesos(total)} COP`;
   });
   
   function toggleMenu() {
     const menu = document.getElementById("menu");
     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
 }
+//
+function pesos(total){
+        return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' }).format(total);
+    };
