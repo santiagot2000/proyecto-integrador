@@ -334,3 +334,18 @@ main {
   }
 }
 
+.cerrarSesion {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+span#nombreUsuario {
+    font-weight: bold;
+    color: black;
+    margin-right: 10px;
+} 
+
