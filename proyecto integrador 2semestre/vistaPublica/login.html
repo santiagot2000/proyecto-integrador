@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../login y registro/styleLogin.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>CONTROLES AMBIENTALES A & B S.A.S</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="../login y registro/imagenes/Logo.jpeg" alt="" class="imgLogo">
+        </section>
+
+        <section class="middle-text">
+            <section><a href="../vistaPublica/index.html">Inicio</a></section>
+            <section><a href="../vistaPublica/recomendaciones.html">Recomendaciones</a></section>
+            <section><a href="../vistaPublica/contacto.html">¿Quieres que te contactemos?</a></section>
+            <section><a href="../vistaPublica/catalogo.html">Servicios</a></section>
+        </section>
+
+        <section class="hamburger">
+            <button class="hamburger-boton" onclick="toggleMenu()" style="margin: 0px">☰</button>
+            <section class="dropdown" id="menu">
+                <a href="../vistaPublica/login.html">Iniciar Sesión</a>
+                <a href="../vistaPublica/catalogo.html">Catalogo de servicios</a>
+                <a href="../vistaPublica/cotizador/cotizador.html">Cotización</a>
+                <a href="../vistaPublica/login.html de citas/citas.html">Agendamiento de citas</a>
+            </section>
+        </section>
+    </header>
+    
+    <main>
+        <!-- Sección de Login -->
+        <section id="seccionLogin" class="">
+            <h2>Iniciar sesión</h2>
+            <form id="formLogin">
+                <input type="text" id="usuarioLogin" placeholder="Usuario" required />
+                <input type="password" id="passwordLogin" placeholder="Contraseña" required />
+                <button type="submit" id="btnLogin">Iniciar sesión</button>
+            </form>
+            <button id="btnMostrarRegistro">Registrarse</button>
+        </section>
+
+        <!-- Sección de Registro -->
+        <section id="seccionRegistro" class="oculto">
+            <h2>Registrar Cuenta</h2>
+            <form id="formRegistro">
+                <input type="text" id="usuarioRegistro" placeholder="Usuario" required />
+                <input type="text" id="idRegistro" placeholder="ID" required />
+                <input type="email" id="correoRegistro" placeholder="Correo" required />
+                <input type="password" id="passwordRegistro" placeholder="Contraseña (4 dígitos)" required />
+                <input type="password" id="passwordConfirmacion" placeholder="Confirmar Contraseña" required />
+                <section>
+                    <label>
+                        <input type="radio" name="tipoCuenta" value="cliente" required /> Cliente
+                    </label>
+                    <label>
+                        <input type="radio" name="tipoCuenta" value="administrador" required /> Administrador
+                    </label>
+                </section>
+                <button type="submit">Registrar</button>
+            </form>
+            <button id="btnRegresarLogin">Volver a atrás</button>
+
+        </section>
+
+        <section id="mensajeSistema" class="mensaje-sistema oculto"></section>
+    </main>
+
+    <footer>
+        <section>
+            <section class="footer-content">
+                <section class="letraFooter">
+                    <p>Cobertura</p>
+                    <p>Atención a toda el área metropolitana</p>
+                </section>
+                <section>
+                    <p>Correo: controles.ambientales@gmail.com</p>
+                    <p>Dirección: Calle 25 # 60 - 115 </p>
+                    <p>Celular: 302 338 17 55</p>
+                </section>
+                <section>
+                    <section class="social-container">
+                        <p>Redes Sociales</p>
+                        <a href="https://www.facebook.com/people/Controles-Ambientales-AB/61566639934175/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/coamb21/" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/573023381755" target="_blank" class="social"><i class="fab fa-whatsapp"></i></a>
+                    </section>
+                </section>
+                <section>
+                    <img src="../login y registro/imagenes/Logo.jpeg" alt="Logo" class="imgLogo">
+                </section>
+                </section>
+        </section>
+        <section class="copiright">
+            <p>© Todos los derechos reservados - 2025</p>
+        </section>
+    </footer>
+    <script type="module" src="../login y registro/main.js"></script>
+    <script src="../login y registro/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
