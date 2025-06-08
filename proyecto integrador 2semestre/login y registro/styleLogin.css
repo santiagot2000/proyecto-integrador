@@ -1,0 +1,341 @@
+/* Menu */
+* {
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding-top: 60px;
+    background-color: whitesmoke;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    background-color: green;
+    color: white;
+    font-size: 25px;  
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 9999;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  header a {
+    font-size: 25px;
+  }
+  
+  
+  .logo {
+    flex: 1;
+  }
+  .imgLogo{
+    width: 150px;
+    height: 120px;
+    border-radius: 40%;
+  }
+  
+  .middle-text {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .middle-text a{
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .hamburger {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .hamburger-boton {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    color: white;
+  }
+    .hamburger-boton:hover{
+    background-color: #218838;
+    transform: scale(1.05);
+    font-weight: bold;
+  } 
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    display: none;
+    flex-direction: column;
+    border-color: green;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+  .dropdown a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border: solid 1px green;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+  .dropdown a:hover {
+    background-color: #eee;
+  }
+  
+  @media (max-width: 768px) {
+    .middle-text {
+      display: none;
+    }
+  
+    .hamburger-button {
+      display: block;
+    }
+  }
+
+  /* Footer */
+    footer {
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+  }
+  
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+  
+  .footer-content section {
+    flex: 1 1 200px;
+  }
+  
+  .footer-content p {
+    margin-bottom: 8px;
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .imgLogo {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-content section {
+      flex: none;
+      width: 100%;
+    }
+  
+    .imgLogo {
+      margin-top: 10px;
+    }
+  }
+  .social-container a{
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+    color: green;
+}
+.copiright{
+    background-color: white;
+    text-align: center;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green;
+}
+.copiright p{
+  margin: 10px;
+}
+
+
+/* Login */
+
+.oculto {
+  display: none !important;
+}
+
+main{
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px green;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  padding: 12px 15px;
+  border: 1.8px solid green;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: black;
+  background-color: #fcfaf7;
+  box-shadow: inset 2px 2px 6px #f3ede6, inset -2px -2px 6px #fff;
+  transition: border-color 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: green;
+  box-shadow: 0 0 8px green;
+  background-color: #fff;
+}
+button,
+input[type="submit"] {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 14px 0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+button:hover,
+input[type="submit"]:hover {
+  background-color: darkgreen;
+  transform: translateY(-2px);
+}
+/* Enlaces y botones secundarios */
+a, .btn-secundario {
+  color: green;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.btn-registro {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-registro:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+/* Estilos para el botón de inicio de sesión */
+.btn-login {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-login:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+/* Estilos para el botón de cerrar sesión */
+.btn-logout {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-logout:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+.mensaje-alerta,
+.mensaje-error,
+.mensaje-sistema.mensaje-error{
+  padding: 12px 15px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(201, 76, 76, 0.7);
+}
+
+.mensaje-exito,
+.mensaje-sistema.mensaje-exito{
+  padding: 12px 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(76, 148, 76, 0.7);
+}
+button{
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
