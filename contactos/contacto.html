@@ -31,24 +31,26 @@
     </section>
 </header>
     <main>
+      <form action="guardar_contactos.php" method="post">
       <table class="tabla">
         <tr>
-          <td><input type="text" placeholder="Nombre" required></td>
-          <td><input type="text" placeholder="Empresa"></td>
+          <td><input type="text" name="nombre" placeholder="Nombre" required></td>
+          <td><input type="text" name="empresa" placeholder="Empresa"></td>
         </tr>
 
         <tr>
-          <td><input type="email" placeholder="Email"></td>
-          <td><input type="number" placeholder="Teléfono"></td>
+          <td><input type="email" name="email" placeholder="Email"></td>
+          <td><input type="number" name="telefono" placeholder="Teléfono"></td>
         </tr>
 
         <tr>
           <td colspan="2" style="text-align: center;">
-            <textarea placeholder="Mensaje"></textarea><br>
+            <textarea name="mensaje" placeholder="Mensaje"></textarea><br>
             <input type="submit" value="Enviar" class="botonenviar">
           </td>
         </tr>
       </table>
+      </form>
     </main>
     <footer>
         <section>
